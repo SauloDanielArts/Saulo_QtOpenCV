@@ -126,7 +126,7 @@ void MainWindow::on_CameraButton_clicked()
         ImagemTemp.release();
         ImagemOriginal.release();
 
-        ImagemOriginal = imread( "Imagens/Teste00.jpg");
+        ImagemOriginal = imread( "Imagens/Teste00.bmp");
         cvtColor( ImagemOriginal, ImagemOriginal, CV_BGR2RGB);
         ImagemOriginal.copyTo(ImagemTemp);
     }
@@ -325,8 +325,12 @@ void MainWindow::FiltrosAplic_Cv()
     }
 
 
+    cvtColor( ImagemTemp, ImagemTemp, CV_BGR2RGB);
+
     img = new IplImage(ImagemTemp);
     cvSaveImage("Imagens/Teste01.bmp",img);
+
+    cvtColor( ImagemTemp, ImagemTemp, CV_BGR2RGB);
 
     tmp=QImage((uchar*)ImagemTemp.data, ImagemTemp.cols, ImagemTemp.rows,
                ImagemTemp.step, QImage::Format_RGB888 );

@@ -14,8 +14,6 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     filtros.cpp \
     dialogde.cpp \
-    dct.cpp \
-    idct.cpp
 
 HEADERS  += mainwindow.h \
     filtros.h \
