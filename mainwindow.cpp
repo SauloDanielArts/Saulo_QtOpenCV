@@ -10,9 +10,7 @@
 #include <QInputDialog>
 #include <QLineEdit>
 
-
 #include "QDebug"
-
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

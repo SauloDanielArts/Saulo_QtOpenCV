@@ -271,7 +271,7 @@ Mat Filtros::Expand_Hor_CvMat(Mat in_img, int x)
 //faser a subitracao de imagens
 
 
-// fazer a rotacao no eixo e em um outo pnto qualquer
+// fazer a rotacao no eixo e em um outo ponto qualquer
 
 //representacoes de imagens:
 
